@@ -46,28 +46,9 @@ public class Main {
         tarjeta.get("Diciembre").put(3,100);
 
 
-        cargarDatos();
+
         mostrarResultadosMesesOrdenadoDeMenorAMayor();
         mostrarResultadosAñoTotal();
-
-    }
-    public static void cargarDatos(){
-
-        for (int i = 0; i< meses.length; i++){
-            System.out.println("Ingrese los gastos del mes de " + meses[i] + " (formato: dia gasto). Ingrese -1 para finalizar el mes.");
-            while (true){
-                int dia = sc.nextInt();
-                if (dia == 0){
-                    break;
-                }
-                int gasto = sc.nextInt();
-                if (!tarjeta.containsKey(meses[i])){
-                    tarjeta.put(meses[i], new HashMap<>());
-                }
-                tarjeta.get(meses[i]).put(dia, gasto);
-            }
-
-        }
 
     }
     public static void mostrarResultadosMesesOrdenadoDeMenorAMayor(){
