@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        circunferencia c1 = new circunferencia(7);
+        circunferencia c1 = new circunferencia(789787.4);
         System.out.println("Radio de la circunferencia: " + c1.getRadio());
         System.out.println("Área de la circunferencia: " + c1.calcularArea());
         System.out.println("Perímetro de la circunferencia: " + c1.calcularPerimetro());
@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Área de la circunferencia: " + c2.calcularArea());
         System.out.println("Perímetro de la circunferencia: " + c2.calcularPerimetro());
 
-        esfera e1 = new esfera(3.7);
+        esfera e1 = new esfera(7.3);
         System.out.println("Radio de la esfera: " + e1.getRadio());
         System.out.println("Volumen de la esfera: " + e1.calcularVolumen());
 
